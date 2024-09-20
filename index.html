@@ -12,7 +12,7 @@
         background: linear-gradient(to right, #667eea, #764ba2);
     }
 </style>
-<body class="flex flex-col justify-center items-center h-screen">
+<body class="flex flex-col justify-center items-center mt-28">
     <div class="bg-white rounded-2xl p-12 shadow-lg ">
     <h2 class="text-2xl text-center mb-8">Digite um número para gerar a tabuada</h2>
     <form id="multiplication-form">
@@ -26,21 +26,13 @@
             <input type="multiplicator" name="multiplicator" id="multiplicator" value="10" class="w-full px-4 py-2 border-solid border-2 border-black rounded-lg">
         </div>
         <div class="text-center">
-            <input type="submit" id="" value="calcular" class=" cursor-pointer bg-indigo-400 text-white py-2 px-4 rounded-xl my-8">
+            <input type="submit" id="botao" value="calcular" class=" cursor-pointer bg-indigo-400 text-white py-2 px-4 rounded-xl my-8">
         </div>
     </form>
-    <div id="multiplication-table">
-        <h2 id="multiplicaton-title">Tabuada do número: <span></span></h2>
+    <div id="multiplication-table" class="text-center">
+        <h2 id="multiplicaton-title" class=" text-2xl my-4">Tabuada do número: <span></span></h2>
         <div id="multiplication-operations">
-            <p>Informe um número para calcular uma tabuada</p>
-            <div class="row">
-                <div class="operation">5 x 1</div>
-                <div class="result">5</div>
-            </div>
-            <div class="row">
-                <div class="operation">5 x 2</div>
-                <div class="result">10</div>
-            </div>
+            <p id="mensagem">Informe um número para calcular uma tabuada</p>
         </div>
     </div>
     </div>
