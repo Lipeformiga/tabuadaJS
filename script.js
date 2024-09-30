@@ -11,7 +11,6 @@ botao.addEventListener("click", (e) => {
     e.preventDefault()
     tabela.innerHTML = ""
 
-
     if ( !number.value || !multiplicator.value){
         const teste = document.createElement("p")
         teste.innerText = "Bota um valor ai paizao"
